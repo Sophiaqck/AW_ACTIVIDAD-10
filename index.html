@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Divisas</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Convertidor de Divisas</a></li>
+            <li><a href="index2.html">Calculadora de IMC (Índice de Masa Corporal)</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Convertidor de Divisas</h1>
+        <p>Le damos la bienvenida a la herramienta de divisas más fiable del mundo</p>
+    </header>
+    <main class="container">
+        <section class="formulario">
+            <form id="formu">
+                <label for="monto">Ingrese la cantidad a convertir (MXN):</label>
+                <input id="monto" type="number" placeholder="Pesos Mexicanos" required>
+
+                <br>
+                <label for="moneda">Convertir a:</label>
+                <select id="moneda" required>
+                    <option value="dolar">Dolar USD</option>
+                    <option value="euro">Euro EUR</option>
+                    <option value="libra">Libra Esterlina GBP</option>
+                    <option value="yen">Yen JPY</option>
+                </select>
+                <input id="btn" type="submit" value="Convertir">
+            </form>
+        </section>
+        <section class="resultado">
+            <h4>Conversión</h4>
+            <p id="conv"></p>
+        </section>
+    </main>
+    <script src="js/miScript.js"></script>
+</body>
+
+</html>
